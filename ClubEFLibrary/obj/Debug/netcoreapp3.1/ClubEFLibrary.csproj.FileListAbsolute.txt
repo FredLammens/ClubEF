@@ -1,0 +1,12 @@
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\bin\Debug\netcoreapp3.1\ClubEFLibrary.deps.json
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\bin\Debug\netcoreapp3.1\ClubEFLibrary.dll
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\obj\Debug\netcoreapp3.1\ClubEFLibrary.csprojAssemblyReference.cache
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\obj\Debug\netcoreapp3.1\ClubEFLibrary.AssemblyInfoInputs.cache
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\obj\Debug\netcoreapp3.1\ClubEFLibrary.AssemblyInfo.cs
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\bin\Debug\netcoreapp3.1\ClubEFLibrary.pdb
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\obj\Debug\netcoreapp3.1\ClubEFLibrary.dll
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\obj\Debug\netcoreapp3.1\ClubEFLibrary.pdb
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\bin\Debug\netcoreapp3.1\ClubEFLibrary.runtimeconfig.json
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\bin\Debug\netcoreapp3.1\ClubEFLibrary.runtimeconfig.dev.json
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\obj\Debug\netcoreapp3.1\ClubEFLibrary.csproj.CoreCompileInputs.cache
+C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\OEf2\EFOpdracht\ClubEF2\ClubEFLibrary\obj\Debug\netcoreapp3.1\ClubEFLibrary.genruntimeconfig.cache

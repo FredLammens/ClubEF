@@ -1,16 +1,31 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.ComponentModel.DataAnnotations;
 using System.Text;
 
 namespace libraryClubEF
 {
-    class Team
+    public class Team
     {
+        [Key]
         public int StamNummer { get; set; } //niet automatisch te genereren
         public string TeamNaam { get; set; }
         public string TeamBijnaam { get; set; }
         public string Trainer { get; set; }//enkel naam
-        public ICollection<Speler> spelers { get; set; }
+        public ICollection<Speler> spelers { get; set; } = new List<Speler>();
 
+        //simpele constructor voor EF
+        public Team(int stamNummer, string teamNaam, string teamBijnaam, string trainer)
+        {
+            StamNummer = stamNummer;
+            TeamNaam = teamNaam;
+            TeamBijnaam = teamBijnaam;
+            Trainer = trainer;
+        }
+
+        public Team(int stamNummer, string teamNaam, string teamBijnaam, string trainer, ICollection<Speler> spelers) : this(stamNummer, teamNaam, teamBijnaam, trainer)
+        {
+            this.spelers = spelers;
+        }
     }
 }
