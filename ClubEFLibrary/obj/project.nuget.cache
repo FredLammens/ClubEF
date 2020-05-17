@@ -1,0 +1,11 @@
+{
+  "version": 2,
+  "dgSpecHash": "5OA3TBClVgIzO1ilAdI2PS6LsKeXSLpFPRlT9MoIc2aEG8cCc+AegG6+3y6TiGXXJSRXS2SUDe9eR6/fDwzRDQ==",
+  "success": true,
+  "projectFilePath": "C:\\Users\\Biebem\\Google Drive\\School\\hbO5\\Semester2\\hbo5_Programmeren4\\OEf2\\EFOpdracht\\ClubEF2\\ClubEFLibrary\\ClubEFLibrary.csproj",
+  "expectedPackageFiles": [
+    "C:\\Users\\Biebem\\.nuget\\packages\\microsoft.netcore.platforms\\1.1.0\\microsoft.netcore.platforms.1.1.0.nupkg.sha512",
+    "C:\\Users\\Biebem\\.nuget\\packages\\netstandard.library\\2.0.3\\netstandard.library.2.0.3.nupkg.sha512"
+  ],
+  "logs": []
+}
