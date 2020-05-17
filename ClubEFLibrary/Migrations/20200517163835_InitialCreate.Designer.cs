@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClubEFLibrary.Migrations
 {
     [DbContext(typeof(ClubContext))]
-    [Migration("20200517161502_InitialCreate")]
+    [Migration("20200517163835_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -90,7 +90,7 @@ namespace ClubEFLibrary.Migrations
 
             modelBuilder.Entity("libraryClubEF.Speler", b =>
                 {
-                    b.HasOne("libraryClubEF.Team", "Team")
+                    b.HasOne("libraryClubEF.Team", null)
                         .WithMany("spelers")
                         .HasForeignKey("TeamStamNummer");
                 });

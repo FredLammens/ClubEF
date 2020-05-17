@@ -20,5 +20,10 @@ namespace libraryClubEF
         {
             Speler = speler;
         }
+
+        public override string ToString()
+        {
+            return $"Transfer : {TransferId} met speler: {Speler.SpelerNaam} en prijs: {TransferPrijs}";
+        }
     }
 }

@@ -88,7 +88,7 @@ namespace ClubEFLibrary.Migrations
 
             modelBuilder.Entity("libraryClubEF.Speler", b =>
                 {
-                    b.HasOne("libraryClubEF.Team", "Team")
+                    b.HasOne("libraryClubEF.Team", null)
                         .WithMany("spelers")
                         .HasForeignKey("TeamStamNummer");
                 });
