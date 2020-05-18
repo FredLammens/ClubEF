@@ -32,26 +32,28 @@ namespace ClubEFLibrary
         }
         public void UpdateSpeler(Speler speler)
         {
-            //object opvragen aanpassen en SaveChanges oproeopen
             using (context)
             {
-                #region update
                 //speler object opvragen
-                /*Speler spelerItem = context.Spelers.SingleOrDefault(spelerDB => spelerDB.SpelerId == speler.SpelerId);
-                //
+                Speler spelerItem = context.Spelers.SingleOrDefault(spelerDB => spelerDB.SpelerId == speler.SpelerId);
                 if (spelerItem != null)
                 {
                     //setvalues spelerITem
+                    spelerItem.RugNummer = speler.RugNummer;
+                    spelerItem.SpelerId = speler.SpelerId;
+                    spelerItem.SpelerNaam = speler.SpelerNaam;
+                    spelerItem.Waarde = speler.Waarde;
                     //SaveChanges
-                }*/
-                #endregion
-                context.Update(speler);
-                context.SaveChanges();
+                    context.SaveChanges();
+                }
             }
         }
         public void UpdateTeam(Team team)
         {
+            using (context) 
+            {
 
+            }
         }
         #region Selectie
         /*public Speler SelecteerSpeler(int spelerID) 
@@ -64,10 +66,10 @@ namespace ClubEFLibrary
         public void InitialiseerDatabank(string path)
         {
             List<Team> teams = GetTeamsFromFile(path);
-            using (context) 
+            using (context)
             {
-            context.Teams.AddRange(teams);
-            context.SaveChanges();
+                context.Teams.AddRange(teams);
+                context.SaveChanges();
             }
         }
         /// <summary>
@@ -101,7 +103,7 @@ namespace ClubEFLibrary
             Console.WriteLine("\nFile read");
             return lines;
         }
-        private List<Team> GetTeamsFromFile(string path) 
+        private List<Team> GetTeamsFromFile(string path)
         {
             List<string[]> file = FileReader(path, ',');
             string spelerNaam; int rugNummer; int waarde; //spelerinfo
