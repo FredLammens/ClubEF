@@ -7,4 +7,9 @@
 
 2. Adding single objects to Database
 
+![4](https://user-images.githubusercontent.com/23512215/82248485-836ee780-9948-11ea-9c8b-0b42eee2eded.PNG)
+![5](https://user-images.githubusercontent.com/23512215/82248867-26276600-9949-11ea-9dd7-21932c0b0c27.PNG)
+![6](https://user-images.githubusercontent.com/23512215/82248907-35a6af00-9949-11ea-8484-2af4cd177755.PNG)
+![7](https://user-images.githubusercontent.com/23512215/82248919-3b03f980-9949-11ea-996b-54dcd7cd72e2.PNG)
+
 3. Update Database objects
