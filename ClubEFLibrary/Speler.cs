@@ -15,5 +15,10 @@ namespace libraryClubEF
             RugNummer = rugNummer;
             Waarde = waarde;
         }
+
+        public override string ToString()
+        {
+            return $"Speler: {SpelerId} {SpelerNaam} met rugnummer: {RugNummer} en waarde: {Waarde}";
+        }
     }
 }

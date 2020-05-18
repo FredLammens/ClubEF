@@ -40,5 +40,10 @@ namespace libraryClubEF
         {
             return HashCode.Combine(StamNummer);
         }
+
+        public override string ToString()
+        {
+            return $"Team: {StamNummer} {TeamNaam} a.k.a {TeamBijnaam} met trainer: {Trainer}";
+        }
     }
 }

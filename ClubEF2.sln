@@ -3,9 +3,9 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29920.165
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubEF", "ClubEF\ClubEF.csproj", "{19A20486-A458-4208-AEE9-7BFA42F618AA}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClubEF", "ClubEF\ClubEF.csproj", "{19A20486-A458-4208-AEE9-7BFA42F618AA}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClubEFLibrary", "ClubEFLibrary\ClubEFLibrary.csproj", "{1C813A9F-DF16-4FEB-B5EC-EB2CDCFDD13B}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClubEFLibrary", "ClubEFLibrary\ClubEFLibrary.csproj", "{1C813A9F-DF16-4FEB-B5EC-EB2CDCFDD13B}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
