@@ -10,7 +10,7 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace ClubEFLibrary.Migrations
 {
     [DbContext(typeof(ClubContext))]
-    [Migration("20200517163835_InitialCreate")]
+    [Migration("20200518155247_InitialCreate")]
     partial class InitialCreate
     {
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -37,8 +37,8 @@ namespace ClubEFLibrary.Migrations
                     b.Property<int?>("TeamStamNummer")
                         .HasColumnType("int");
 
-                    b.Property<double>("Waarde")
-                        .HasColumnType("float");
+                    b.Property<int>("Waarde")
+                        .HasColumnType("int");
 
                     b.HasKey("SpelerId");
 
@@ -50,9 +50,7 @@ namespace ClubEFLibrary.Migrations
             modelBuilder.Entity("libraryClubEF.Team", b =>
                 {
                     b.Property<int>("StamNummer")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("TeamBijnaam")
                         .HasColumnType("nvarchar(max)");

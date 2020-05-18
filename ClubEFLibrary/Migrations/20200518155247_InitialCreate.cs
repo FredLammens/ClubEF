@@ -10,8 +10,7 @@ namespace ClubEFLibrary.Migrations
                 name: "Teams",
                 columns: table => new
                 {
-                    StamNummer = table.Column<int>(nullable: false)
-                        .Annotation("SqlServer:Identity", "1, 1"),
+                    StamNummer = table.Column<int>(nullable: false),
                     TeamNaam = table.Column<string>(nullable: true),
                     TeamBijnaam = table.Column<string>(nullable: true),
                     Trainer = table.Column<string>(nullable: true)
@@ -29,7 +28,7 @@ namespace ClubEFLibrary.Migrations
                         .Annotation("SqlServer:Identity", "1, 1"),
                     SpelerNaam = table.Column<string>(nullable: true),
                     RugNummer = table.Column<int>(nullable: false),
-                    Waarde = table.Column<double>(nullable: false),
+                    Waarde = table.Column<int>(nullable: false),
                     TeamStamNummer = table.Column<int>(nullable: true)
                 },
                 constraints: table =>

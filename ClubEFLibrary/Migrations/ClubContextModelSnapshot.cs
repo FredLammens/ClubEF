@@ -35,8 +35,8 @@ namespace ClubEFLibrary.Migrations
                     b.Property<int?>("TeamStamNummer")
                         .HasColumnType("int");
 
-                    b.Property<double>("Waarde")
-                        .HasColumnType("float");
+                    b.Property<int>("Waarde")
+                        .HasColumnType("int");
 
                     b.HasKey("SpelerId");
 
@@ -48,9 +48,7 @@ namespace ClubEFLibrary.Migrations
             modelBuilder.Entity("libraryClubEF.Team", b =>
                 {
                     b.Property<int>("StamNummer")
-                        .ValueGeneratedOnAdd()
-                        .HasColumnType("int")
-                        .HasAnnotation("SqlServer:ValueGenerationStrategy", SqlServerValueGenerationStrategy.IdentityColumn);
+                        .HasColumnType("int");
 
                     b.Property<string>("TeamBijnaam")
                         .HasColumnType("nvarchar(max)");

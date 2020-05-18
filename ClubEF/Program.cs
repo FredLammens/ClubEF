@@ -1,4 +1,5 @@
-﻿using System;
+﻿using ClubEFLibrary;
+using System;
 
 namespace ClubEF
 {
@@ -6,7 +7,8 @@ namespace ClubEF
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Library lib = new Library();
+            lib.InitialiseerDatabank(@"C:\Users\Biebem\Google Drive\School\hbO5\Semester2\hbo5_Programmeren4\5.Entity framework\foot.csv");
         }
     }
 }
