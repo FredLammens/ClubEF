@@ -28,6 +28,13 @@ namespace ClubEFLibrary
         {
             Console.WriteLine("Adding transfer...");
             context.Add(transfer);
+            //transfer uitvoeren
+            Speler spelerItem = context.Spelers.Single(s => s.Equals(transfer.Speler));
+            Team oudTeam = context.Teams.Single(t => t.Equals(transfer.oudTeam));
+            Team nieuwTeam = context.Teams.Single(t => t.Equals(transfer.nieuwTeam));
+            oudTeam.spelers.Remove(spelerItem);
+            nieuwTeam.spelers.Add(spelerItem);
+            //save changes
             context.SaveChanges();
             Console.WriteLine(transfer + " added.");
         }

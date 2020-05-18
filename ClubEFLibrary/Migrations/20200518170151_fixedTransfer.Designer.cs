@@ -4,14 +4,16 @@ using ClubEFLibrary;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 namespace ClubEFLibrary.Migrations
 {
     [DbContext(typeof(ClubContext))]
-    partial class ClubContextModelSnapshot : ModelSnapshot
+    [Migration("20200518170151_fixedTransfer")]
+    partial class fixedTransfer
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -77,19 +79,9 @@ namespace ClubEFLibrary.Migrations
                     b.Property<decimal>("TransferPrijs")
                         .HasColumnType("decimal(18,2)");
 
-                    b.Property<int?>("nieuwTeamStamNummer")
-                        .HasColumnType("int");
-
-                    b.Property<int?>("oudTeamStamNummer")
-                        .HasColumnType("int");
-
                     b.HasKey("TransferId");
 
                     b.HasIndex("SpelerId");
-
-                    b.HasIndex("nieuwTeamStamNummer");
-
-                    b.HasIndex("oudTeamStamNummer");
 
                     b.ToTable("Transfers");
                 });
@@ -106,14 +98,6 @@ namespace ClubEFLibrary.Migrations
                     b.HasOne("libraryClubEF.Speler", "Speler")
                         .WithMany()
                         .HasForeignKey("SpelerId");
-
-                    b.HasOne("libraryClubEF.Team", "nieuwTeam")
-                        .WithMany()
-                        .HasForeignKey("nieuwTeamStamNummer");
-
-                    b.HasOne("libraryClubEF.Team", "oudTeam")
-                        .WithMany()
-                        .HasForeignKey("oudTeamStamNummer");
                 });
 #pragma warning restore 612, 618
         }
