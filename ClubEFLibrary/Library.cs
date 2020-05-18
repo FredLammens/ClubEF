@@ -1,4 +1,5 @@
 ﻿using libraryClubEF;
+using Microsoft.EntityFrameworkCore.Internal;
 using System;
 using System.Collections.Generic;
 using System.IO;
@@ -35,7 +36,7 @@ namespace ClubEFLibrary
             using (context)
             {
                 //speler object opvragen
-                Speler spelerItem = context.Spelers.SingleOrDefault(spelerDB => spelerDB.SpelerId == speler.SpelerId);
+                Speler spelerItem = context.Spelers.SingleOrDefault(spelerDB => spelerDB.SpelerId == speler.SpelerId);//indien niets teruggevonden => null object weer
                 if (spelerItem != null)
                 {
                     //setvalues spelerITem
@@ -46,22 +47,48 @@ namespace ClubEFLibrary
                     //SaveChanges
                     context.SaveChanges();
                 }
+                else 
+                {
+                    Console.WriteLine($"Speler {speler.SpelerNaam} niet gevonden");
+                }
             }
         }
         public void UpdateTeam(Team team)
         {
             using (context) 
             {
-
+                //Team object opvragen
+                Team teamItem = context.Teams.SingleOrDefault(teamDB => teamDB.StamNummer == team.StamNummer);
+                if (teamItem != null)
+                {
+                    //setvalues TeamItem
+                    teamItem.spelers = team.spelers;
+                    teamItem.StamNummer = team.StamNummer;
+                    teamItem.TeamBijnaam = team.TeamBijnaam;
+                    teamItem.TeamNaam = team.TeamNaam;
+                    teamItem.Trainer = team.Trainer;
+                    //SaveChanges
+                    context.SaveChanges();
+                }
+                else 
+                {
+                    Console.WriteLine($"Team: {team.TeamNaam} is niet gevonden");
+                }
             }
         }
         #region Selectie
-        /*public Speler SelecteerSpeler(int spelerID) 
+        public Speler SelecteerSpeler(int spelerID) 
         {
-
+            return context.Spelers.FirstOrDefault(s => s.SpelerId == spelerID);
         }
-        public Team SelecteerTeam(int stamnummer) { }
-        public Transfer SelecteerTransfer(int transferID) { }*/
+        public Team SelecteerTeam(int stamnummer) 
+        {
+            return context.Teams.FirstOrDefault(t => t.StamNummer == stamnummer);
+        }
+        public Transfer SelecteerTransfer(int transferID) 
+        {
+            return context.Transfers.FirstOrDefault(transfer => transfer.TransferId == transferID);
+        }
         #endregion
         public void InitialiseerDatabank(string path)
         {
