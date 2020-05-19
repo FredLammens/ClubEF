@@ -14,7 +14,7 @@ namespace libraryClubEF
         public string TeamNaam { get; set; }
         public string TeamBijnaam { get; set; }
         public string Trainer { get; set; }//enkel naam
-        public ICollection<Speler> spelers { get; set; } = new List<Speler>();
+        public IList<Speler> spelers { get; set; } = new List<Speler>();
 
         //simpele constructor voor EF
         public Team(int stamNummer, string teamNaam, string teamBijnaam, string trainer)
@@ -25,7 +25,7 @@ namespace libraryClubEF
             Trainer = trainer;
         }
 
-        public Team(int stamNummer, string teamNaam, string teamBijnaam, string trainer, ICollection<Speler> spelers) : this(stamNummer, teamNaam, teamBijnaam, trainer)
+        public Team(int stamNummer, string teamNaam, string teamBijnaam, string trainer, IList<Speler> spelers) : this(stamNummer, teamNaam, teamBijnaam, trainer)
         {
             this.spelers = spelers;
         }

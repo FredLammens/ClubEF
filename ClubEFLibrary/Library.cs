@@ -72,25 +72,7 @@ namespace ClubEFLibrary
             if (teamItem != null)
             {
                 //setvalues TeamItem
-                //teamItem.spelers = team.spelers;
-
-                // door alle spelers van teamItem 
-                for (int i = 0; i < teamItem.spelers.Count; i++)
-                {
-                    int spelerIndex = team.spelers.IndexOf(teamItem.spelers.);
-                    if (team.spelers.Contains(teamItem.spelers[i])) ;// zit de speler niet in het team
-                }
-                
-                // zoja verwijder speler uit teamItem
-
-                //door alle spelers van team 
-                // zit speler nog niet in teamItem
-                // is speler al in databank zoja
-                // speler uit databank halen
-                // speler in teamItem steken 
-                // zonee 
-                // voeg speler toe 
-
+                teamItem.spelers = team.spelers;
                 teamItem.TeamBijnaam = team.TeamBijnaam;
                 teamItem.TeamNaam = team.TeamNaam;
                 teamItem.Trainer = team.Trainer;
@@ -115,7 +97,8 @@ namespace ClubEFLibrary
         }
         public Transfer SelecteerTransfer(int transferID)
         {
-            return context.Transfers.FirstOrDefault(transfer => transfer.TransferId == transferID);
+            Transfer transfer = context.Transfers.Include(s => s.Speler).Include(ot => ot.oudTeam).Include(nt => nt.nieuwTeam).FirstOrDefault(transfer => transfer.TransferId == transferID);
+            return transfer;
         }
         #endregion
         #region InitialiseerDB

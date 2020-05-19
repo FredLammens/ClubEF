@@ -32,12 +32,19 @@ namespace ClubEF
             lib.UpdateSpeler(testUpdateSpeler);
             Team testUpdateTeamOud = new Team(16, "UpdatedTeam", "utO", "Trainer John");
             lib.UpdateTeam(testUpdateTeamOud);*/
-            Speler testUpdateSpeler = new Speler("UpdatedSpelernaam", 14, 1);
+            //extra test
+            /*Speler testUpdateSpeler = new Speler("UpdatedSpelernaam", 14, 1);
             Team testUpdateTeamOud = new Team(16, "UpdatedTeam", "utO", "Trainer John");
             testUpdateTeamOud.spelers.Add(testUpdateSpeler);
-            lib.UpdateTeam(testUpdateTeamOud);
+            lib.UpdateTeam(testUpdateTeamOud);*/
             #endregion
             #region SelectionDB
+            Console.WriteLine("Selecteer speler 3");
+            Console.WriteLine(lib.SelecteerSpeler(3));
+            Console.WriteLine("Selecteer team 3");
+            Console.WriteLine(lib.SelecteerTeam(3));
+            Console.WriteLine("Selecteer transfer 1");
+            Console.WriteLine(lib.SelecteerTransfer(1));
             #endregion
         }
     }
