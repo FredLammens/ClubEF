@@ -19,3 +19,5 @@
 ![10](https://user-images.githubusercontent.com/23512215/82249604-61766480-994a-11ea-9fde-ce268cd1afe3.PNG)
 
 4. Selection Database objects
+
+![11](https://user-images.githubusercontent.com/23512215/82325872-389eaf80-99dc-11ea-9c5c-d48ca10dc34b.PNG)
